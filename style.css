@@ -12,60 +12,45 @@
             --color-charcoal: #2d3332;
             --color-white: #ffffff;
             --color-light-sage: #a8b9a0;
+            --color-kikilo: #b26d6d;
         }
 
         body {
             font-family: 'Georgia', serif;
             color: var(--color-charcoal);
             background-color: var(--color-cream);
-            line-height: 1.6;
         }
 
         /* Fixed navigation with pure CSS mobile menu */
         header {
-            position: fixed;
+            position:fixed;
             top: 0;
             width: 100%;
             background-color: var(--color-white);
-            padding: 1.5rem 5%;
+            padding: 1.5rem 5%; 
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
+            justify-content:space-between;
+            z-index: 1;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         .logo {
             font-size: 1.5rem;
-            font-weight: bold;
+            font-weight:bolder;
             color: var(--color-charcoal);
             letter-spacing: 2px;
         }
-
-        /* Pure CSS hamburger menu using checkbox */
-        #menu-toggle {
-            display: none;
-        }
-
-        .menu-icon {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            padding: 5px;
-        }
-
-        .menu-icon span {
-            width: 25px;
-            height: 3px;
-            background-color: var(--color-charcoal);
-            transition: all 0.3s;
-        }
-
         nav ul {
-            display: flex;
+           display:flex;
             gap: 2rem;
             list-style: none;
+
+        }
+         nav a:hover {
+            color: var(--color-sage);
+            background-color: pink;
+            padding: 5px;
+            border-radius: 10px;
         }
 
         nav a {
@@ -75,37 +60,6 @@
             transition: color 0.3s;
             font-weight: 500;
         }
-
-        nav a:hover {
-            color: var(--color-sage);
-        }
-
-        /* Admin icon styles using pure CSS icon */
-        .admin-icon {
-            width: 40px;
-            height: 40px;
-            background-color: var(--color-sage);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-white);
-            font-size: 1.2rem;
-            transition: all 0.3s;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .admin-icon:hover {
-            background-color: var(--color-charcoal);
-            transform: scale(1.05);
-        }
-
-        .admin-icon::before {
-            content: "👤";
-            font-size: 1.3rem;
-        }
-
         /* Login button styles */
         .login-button {
             padding: 0.7rem 1.8rem;
@@ -113,11 +67,9 @@
             color: var(--color-white);
             text-decoration: none;
             border-radius: 50px;
-            font-size: 0.95rem;
-            transition: all 0.3s;
+            transition: all 0.4s;
             border: 2px solid var(--color-sage);
             font-weight: 500;
-            display: inline-block;
         }
 
         .login-button:hover {
@@ -132,7 +84,6 @@
             align-items: center;
             gap: 2rem;
         }
-
         /* Hero Section */
         .hero {
             margin-top: 80px;
@@ -140,9 +91,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, var(--color-cream) 0%, #e8ded5 100%);
-            padding: 4rem 5%;
-            position: relative;
         }
 
         .hero-content {
@@ -166,13 +114,12 @@
         }
 
         .cta-button {
-            display: inline-block;
-            padding: 1.1rem 2.8rem;
+            padding: 17px;
             background-color: var(--color-sage);
             color: var(--color-white);
             text-decoration: none;
             border-radius: 50px;
-            font-size: 1rem;
+            font-size: 1.1rem;
             transition: all 0.3s;
             border: 2px solid var(--color-sage);
             font-weight: 500;
