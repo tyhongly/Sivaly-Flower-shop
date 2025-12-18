@@ -1,0 +1,214 @@
+        /* Responsive design for all devices using media queries */
+        
+        /* Tablet (768px - 1024px) */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .section-title {
+                font-size: 2.4rem;
+            }
+
+            .about {
+                gap: 3rem;
+            }
+
+            .about-content h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Mobile (max 767px) */
+        @media (max-width: 767px) {
+            header {
+                padding: 1rem 5%;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            /* Show hamburger menu icon on mobile */
+            .menu-icon {
+                display: flex;
+            }
+
+            /* Stack nav wrapper vertically on mobile */
+            .nav-wrapper {
+                position: fixed;
+                top: 60px;
+                left: -100%;
+                width: 100%;
+                background-color: var(--color-white);
+                transition: left 0.3s;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 2rem 5%;
+            }
+
+            #menu-toggle:checked ~ .nav-wrapper {
+                left: 0;
+            }
+
+            nav {
+                position: static;
+                width: 100%;
+                background-color: transparent;
+                box-shadow: none;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 0;
+                gap: 1.5rem;
+            }
+
+            nav a {
+                font-size: 1.1rem;
+            }
+
+            .login-button {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero {
+                margin-top: 70px;
+                min-height: 80vh;
+                padding: 3rem 5%;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .cta-button {
+                padding: 1rem 2rem;
+                font-size: 0.95rem;
+            }
+
+            .featured,
+            .services,
+            .about,
+            .testimonials,
+            .contact {
+                padding: 4rem 5%;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            .flower-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .about-content h2 {
+                font-size: 2rem;
+            }
+
+            .about-content p {
+                font-size: 1rem;
+            }
+
+            .about-image {
+                width: 100%;
+                height: 350px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                padding: 2rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+        }
+
+        /* Small Mobile (max 480px) */
+        @media (max-width: 480px) {
+            header {
+                padding: 1rem 4%;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .hero {
+                padding: 2rem 4%;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .featured,
+            .services,
+            .about,
+            .testimonials,
+            .contact {
+                padding: 3rem 4%;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .flower-card-content {
+                padding: 1.5rem;
+            }
+
+            .flower-card h3 {
+                font-size: 1.4rem;
+            }
+
+            .contact-container {
+                padding: 1.5rem;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                padding: 0.8rem;
+            }
+
+            footer {
+                padding: 3rem 4% 1.5rem;
+            }
+        }
