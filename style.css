@@ -160,8 +160,8 @@
         .flower-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem; */
-            margin-top: 3rem; */
+            gap: 2.5rem; 
+            margin-top: 3rem; 
             
         }
 
